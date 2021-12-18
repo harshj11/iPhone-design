@@ -1,0 +1,23 @@
+.phone-content {
+    margin: 1rem 0;
+}
+
+.msg {
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-size: 0.8rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 10rem;
+}
+
+.msg-received {
+    background-color: #e66465;
+}
+
+.msg-sent {
+    background-color: rgba(88, 77, 155, 0.644);
+    position: relative;
+    left: 58px;
+}
