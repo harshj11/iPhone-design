@@ -1,4 +1,5 @@
 .phone-content {
+    height: 23.625rem;
     margin: 1rem 0;
 }
 
@@ -9,7 +10,19 @@
     font-size: 0.8rem;
     margin: 0.5rem;
     padding: 0.5rem;
+    
+    position: absolute;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 400ms ease, transform 400ms ease;
+    
     width: 10rem;
+}
+
+.show {
+  position: relative;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .msg-received {

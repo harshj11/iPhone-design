@@ -4,8 +4,24 @@
 @import "./phone-footer.css";
 
 body {
-    background: rgba(233, 171, 147, 0.575);
+    background: hsla(29, 13%, 39%, 0.205);
     font-family: "Rubik", sans-serif;
+}
+
+.info {
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+
+.title {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.info-text {
+    color: rgba(0, 0, 0, 0.575);
+    max-width: 25rem;
+    text-align: justify;
 }
 
 .container {
@@ -18,7 +34,8 @@ body {
 .phone-parent-container {
     border: solid 0.5rem rgb(255, 255, 255);
     border-radius: 1.5625rem;
-    
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+
     height: 33.25em;
     width: 15.625em;
 
@@ -27,4 +44,20 @@ body {
 
 .phone-child-container {
     border-radius: 0.9375rem;  
+    height: inherit;
+}
+
+@media(max-width: 725px) {
+
+    .small-only {
+        display: block;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .title {
+        text-align: center;
+    }
 }
