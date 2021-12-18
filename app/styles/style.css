@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 @import "./phone-header.css";
 @import "./phone-content.css";
+@import "./phone-footer.css";
 
 body {
     background: rgba(233, 171, 147, 0.575);
@@ -12,4 +13,18 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+.phone-parent-container {
+    border: solid 0.5rem rgb(255, 255, 255);
+    border-radius: 1.5625rem;
+    
+    height: 33.25em;
+    width: 15.625em;
+
+    margin-top: 1rem;
+}
+
+.phone-child-container {
+    border-radius: 0.9375rem;  
 }
